@@ -1,0 +1,254 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.41;
+    font-family: 'IBM Plex Serif', serif;
+    background-color: #fbfbfb;
+    color: black;
+}
+.mrbiggs img{
+    height: 40px;
+    width: 40px;
+}
+#header .contact-me{
+    background-color: red;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.contact-container{
+    display: flex;
+    text-align: right;
+    justify-content:right;
+    margin-right: 180px;
+    
+}
+.contact-container a{
+    padding: 1px 15px;
+    color: #ffff;
+}
+
+nav{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    font-size: 1.2em;
+    padding: 0px 10% 0 10%;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+}
+nav ul a:hover{
+    border-bottom: 2px solid red;
+}
+header a {
+    color: red;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    opacity: 0.8;
+    transition: opacity 0.4s;
+}
+.location .call-to-action a:hover{
+    background-color: orange;
+    padding: 10px 40px;
+}
+span i{
+    font-size: 0.7em;
+    padding: 0 0 0 7px;
+}
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.location .call-to-action .btn{
+    background-color: red;
+    padding: 10px 35px;
+    color:#fff;
+    border-radius: 30px;
+    margin: 10px;
+}
+.call-to-action .btn{
+    background-color: red;
+    padding: 10px 20px;
+    color:#fff;
+    border-radius: 30px;
+    margin: 10px;
+    text-decoration: none;
+}
+.order, .chop-up-meal h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.chop-up-container{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    overflow: scroll;
+    align-items: center;
+}
+.chop-up{
+    background-color: rgb(233, 247, 249);
+    margin: 20px;
+}
+.chop-up-text{
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+.chop-up-price{
+    margin-bottom: 25px;
+}
+.chop-up .call-to-action .btn{
+    margin: 20px 0;
+}
+.menu{
+    background-color: red;
+    color: rgb(245, 162, 8);
+    font-size: 2.2em;
+    font-weight: 900;
+    padding: 10px 0 10px 80px;
+}
+.foodList{
+   position: -webkit-sticky;
+   position: sticky;
+   top: 70px; 
+   background-color: #fff;
+   padding: 20px 0;
+}
+
+.foodList-container ul li{
+    border-radius: 30px;
+    padding: 10px 15px;
+    background-color:  rgb(245, 162, 8);
+    margin: 10px;
+    font-weight: 900;
+
+}
+.foodList-container ul li:hover{
+    background-color: rgba(253, 167, 6, 0.706);
+    padding: 12px 17px;
+    transition: padding 2s;
+}
+.foodList{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 30px 0;
+}
+.deals-container{
+    text-align: center;
+    margin: 30px 0;
+}
+
+footer .container{
+    background-color: red;
+    border-bottom: 1px solid orange;
+}
+.contact-container{
+    border-bottom: 2px solid orange;
+    text-align: center;
+
+}
+.footer-container, .copyright{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: space-between;
+    color: #fff;
+}
+.footer-container .contact-info{
+    margin: 66px;
+}
+.contact-info h4{
+    padding: 30px 0;
+}
+
+.biggie-logo img{
+    margin: 35px 0 50px 80px;
+}
+.writecopy{
+    margin-left: 600px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+
+    .nav{
+        position: relative;
+        display: flex;
+        flex: 100%;
+    }
+    .nav .icon{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+     .chop-up-container{
+    display: flex;
+    flex: 50%;
+}
+footer .container{
+    background-color: red;
+    border-bottom: 1px solid orange;
+    width: 100%;
+}
+.contact-info{
+    flex: 50%;
+  }
+}
